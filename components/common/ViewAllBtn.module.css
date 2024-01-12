@@ -1,0 +1,21 @@
+.view-all-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #ff8b4a;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 28px;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: none;
+  }
+}
+/* make it responsive */
