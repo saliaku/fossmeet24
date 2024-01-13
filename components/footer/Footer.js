@@ -65,14 +65,14 @@ const Footer = () => {
             </p>
             <div className={styles.socialLinks}>
               <a
-                href="https://m.facebook.com/profile.php?id=333141540396903"
+                href="https://telegram.me/foss_meet"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaTelegram />
               </a>
               <a
-                href="https://telegram.me/foss_meet"
+                href="https://twitter.com/fosscell"
                 target="_blank"
                 rel="noopener noreferrer"
               >
