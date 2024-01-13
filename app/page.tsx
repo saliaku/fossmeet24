@@ -1,4 +1,5 @@
-import ViewAllBtn from '@/components/common/ViewAllBtn'
+// import ViewAllBtn from '@/components/common/ViewAllBtn'
+import Footer from '@/components/footer/Footer'
 
 import Workshopbox from '@/components/common/Workshopbox'
 
@@ -19,6 +20,8 @@ export default function Home() {
        organizerLogo={'/csea-small.png'}
        />
        
+
+      <Footer />
     </main>
   )
 }
