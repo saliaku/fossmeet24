@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import {
-  FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
+  FaMastodon,
+  FaTelegram,
   FaTwitter,
-  FaYoutube,
 } from 'react-icons/fa'
 import styles from './Footer.module.css'
 
@@ -69,10 +69,10 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebookF />
+                <FaTelegram />
               </a>
               <a
-                href="https://twitter.com/fosscell"
+                href="https://telegram.me/foss_meet"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -93,11 +93,11 @@ const Footer = () => {
                 <FaLinkedinIn />
               </a>
               <a
-                href="https://www.linkedin.com/company/foss-cell-nitc/mycompany/"
+                href="https://www.mastodon.social/@FOSSCell@floss.social"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaYoutube />
+                <FaMastodon />
               </a>
             </div>
           </div>
