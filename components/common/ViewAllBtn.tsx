@@ -7,13 +7,13 @@ function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
-      <nav className="w-full bg-white md:border-black border-b-2 fixed top-0 left-0 right-0 z-10">
+      <nav className="w-full bg-white border-black border-b-2 fixed top-0 left-0 right-0 z-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between md:py-2 md:block">
               <Link href="/">
                 <h2 className="text-2xl text-black font-bold ">FOSSMeet' 24
-                <span className="hidden md:inline-block absolute h-full border-l-2 border-black top-1/2 transform -translate-y-1/2 ml-6"></span>
+                <span className={`absolute h-full border-l-2 border-black top-1/2 transform -translate-y-1/2 ml-6 ${navbar ? 'hidden' : ''}`}></span>
                 </h2>
               </Link>
               <div className="md:hidden ml-4">
@@ -22,7 +22,12 @@ function NavBar() {
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <Image src="/close.svg" width={30} height={30} alt="logo" />
+                    <Image src="/close.svg" 
+                      width={30} 
+                      height={30} 
+                      alt="logo" 
+                      className=""  
+                    />
                   ) : (
                     <Image
                       src="/hamburger-menu.svg"
