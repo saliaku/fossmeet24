@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 
-export default function Workshopbox({ title, image ,date, time, description, organizer, organizerLogo }) {
+export default function Workshopbox({ title, image ,date, time, description, organizer, organizerLogo,setShowModal }) {
   return (
     <div className={styles['work-shop-box']}>
 
@@ -46,13 +46,20 @@ export default function Workshopbox({ title, image ,date, time, description, org
           </div>
 
           <div className={styles['view-btn']}>
-            <Link href='/'>
+            <button 
+            onClick={
+              
+              () => {
+              setShowModal(true)
+              }
+            }
+            >
               <Image 
                 src={'/arrow_right_alt.png'}
                 width={28}
                 height={28}
                 alt="logo of organizer" />
-            </Link>
+            </button>
           </div>
 
           
