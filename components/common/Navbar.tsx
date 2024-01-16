@@ -12,7 +12,7 @@ function NavBar() {
           <div>
             <div className="flex items-center justify-between md:py-2 md:block">
               <Link href="/">
-                <h2 className="text-2xl text-black font-bold ">FOSSMeet' 24
+              <h2 className="text-2xl text-black font-bold ">FOSSMeet&apos; 24
                 <span className={`absolute h-full border-l-2 border-black top-1/2 transform -translate-y-1/2 ml-6 ${navbar ? 'hidden' : ''}`}></span>
                 </h2>
               </Link>
