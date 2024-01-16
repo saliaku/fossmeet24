@@ -17,10 +17,13 @@ function NavBar() {
                 </h2>
               </Link>
               <div className="md:hidden ml-4">
-                <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                  onClick={() => setNavbar(!navbar)}
-                >
+              <button
+                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                onClick={() => {
+                  console.log('Hamburger button clicked');
+                  setNavbar(!navbar);
+                }}
+              >
                   {navbar ? (
                     <Image src="/close.svg" 
                       width={30} 
