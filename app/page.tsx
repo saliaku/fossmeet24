@@ -1,12 +1,14 @@
 "use client";
+import Navbar from '../components/common/Navbar'
 import Footer from '@/components/footer/Footer'
-
 import Workshopbox from '@/components/common/Workshopbox'
 import { useState } from 'react'
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false)
   return (
+    <div>
+			<Navbar />
     <main>
       <h1 className="text-4xl font-bold mb-8">Hello World!</h1>
 
@@ -25,5 +27,6 @@ export default function Home() {
 
       <Footer />
     </main>
+    </div>
   )
 }
