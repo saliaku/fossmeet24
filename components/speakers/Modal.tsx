@@ -33,8 +33,8 @@ const Modal = ({ showModal, setShowModal }) => {
               Science graduate from PES University, Bangalore. He is currently a
               software engineer at Nilenso and has previously worked as an
               intern for the Git Community as a part of the Google Summer of
-              Code'21. Even while working as a full time engineer, he never
-              shies away from sharing his knowledge and experience to youngsters
+              Code 21. Even while working as a full time engineer, he never
+              shies aay from sharing his knowledge and experience to youngsters
               and fellow FOSS enthusiasts, testimony to which is his initiative
               of an open source community by the name of Universities of FOSS,
               India.
