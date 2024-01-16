@@ -1,16 +1,23 @@
-"use client";
-import Footer from '@/components/footer/Footer'
-
+'use client';
+import React from 'react'
 import Workshopbox from '@/components/common/Workshopbox'
+import Modal from '@/components/workshops/Modal'
 import { useState } from 'react'
 
-export default function Home() {
-  const [showModal, setShowModal] = useState(false)
+const Page = () => {
+    const [showModal, setShowModal] = useState(false)
   return (
-    <main>
-      <h1 className="text-4xl font-bold mb-8">Hello World!</h1>
+    <div>
+        <Modal
+        showModal={showModal}
+        setShowModal={setShowModal}
+        />
 
-      <Workshopbox
+       
+        <div
+        className='flex flex-wrap gap-3'
+        >
+            <Workshopbox
             setShowModal={setShowModal}
             title={'FFmpeg Workshop'}
             image={'/r1.png'}
@@ -23,7 +30,9 @@ export default function Home() {
             organizerLogo={'/csea-small.png'}
             />
 
-      <Footer />
-    </main>
+        </div>
+    </div>
   )
 }
+
+export default Page
