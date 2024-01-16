@@ -1,9 +1,9 @@
-import ViewAllBtn from '../components/common/ViewAllBtn'
+import Navbar from '../components/common/Navbar'
 
 export default function Home() {
 	return (
 		<div>
-			<ViewAllBtn />
+			<Navbar />
 		</div>
 	)
 }
