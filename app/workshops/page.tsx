@@ -4,7 +4,7 @@ import Workshopbox from '@/components/common/Workshopbox'
 import Modal from '@/components/workshops/Modal'
 import { useState } from 'react'
 
-const page = () => {
+const Page = () => {
     const [showModal, setShowModal] = useState(false)
   return (
     <div>
@@ -35,4 +35,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

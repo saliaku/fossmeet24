@@ -5,7 +5,7 @@ import Modal from '@/components/speakers/Modal'
 import { useState } from 'react'
 
 
-const page = () => {
+const Page = () => {
     const [showModal, setShowModal] = useState(false)
   return (
     <div>
@@ -39,4 +39,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

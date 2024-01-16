@@ -14,8 +14,11 @@ const Modal = ({ showModal, setShowModal }) => {
         <div className="absolute top-0 right-0 p-4">
           
          
-          <img
+          <Image
             src={'/close-button.svg'}
+            width={0}
+            height={0}
+            className='w-full h-full'
             onClick={() => setShowModal(false)}
             alt="close button"
           />
@@ -23,7 +26,7 @@ const Modal = ({ showModal, setShowModal }) => {
         <div className="p-4">
           <div
           >
-            <img src={'/person.png'} className='w-[80px] h-[80px] sm:h-[135px] sm:w-[135px]' alt="Atharv" />
+            <Image src={'/person.png'} width={80} height={80} className='w-[80px] h-[80px] sm:h-[135px] sm:w-[135px]' alt="Atharv" />
             <h1 className="mt-2 font-bold text-xl sm:text-2xl">Atharva Raykar</h1>
             <p className="text-gray-500 text-sm sm:text-base">
               Atharva Raykar is an ardent FOSS enthusiast who is a Computer
