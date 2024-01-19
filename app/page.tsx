@@ -22,17 +22,6 @@ export default function Home() {
 
         <br></br>
 
-        {/* <Speakersbox
-          setShowModal={setShowModal}
-          name={'Dr. Sasi Kumar'}
-          image={'/sasi_kumar.svg'}
-          event={'TALK'}
-          event_detail={'Keynote Talk'}
-          description={
-            'Dr. Sasi Kumar is a Free Software activist and a member of the Board of Directors of the Free Software Foundation of India. He has conducted research in atmospheric electricity, rainfall studies and cloud physics and has wrote popular science articles. He has also published three popular science books in Malayalam. He is an educationist and has been teaching school children for about a decade.'
-          }
-        /> */}
-
         <Footer />
       </main>
     </div>
