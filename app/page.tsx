@@ -1,4 +1,5 @@
 'use client'
+import Speakersbox from '@/components/common/Speakersbox'
 import Workshopbox from '@/components/common/Workshopbox'
 import Footer from '@/components/footer/Footer'
 import { useState } from 'react'
@@ -11,7 +12,7 @@ export default function Home() {
       <Navbar />
       <main>
         <h1 className="text-4xl font-bold mb-8">Hello World!</h1>
-
+        <br></br>
         <Workshopbox
           setShowModal={setShowModal}
           title={'FFmpeg Workshop'}
@@ -23,6 +24,19 @@ export default function Home() {
           }
           organizer={'CSEA'}
           organizerLogo={'/csea-small.png'}
+        />
+
+        <br></br>
+
+        <Speakersbox
+          setShowModal={setShowModal}
+          name={'Dr. Sasi Kumar'}
+          image={'/sasi_kumar.svg'}
+          event={'TALK'}
+          event_detail={'Keynote Talk'}
+          description={
+            'Dr. Sasi Kumar is a Free Software activist and a member of the Board of Directors of the Free Software Foundation of India. He has conducted research in atmospheric electricity, rainfall studies and cloud physics and has wrote popular science articles. He has also published three popular science books in Malayalam. He is an educationist and has been teaching school children for about a decade.'
+          }
         />
 
         <Footer />

@@ -18,7 +18,7 @@ const Page = () => {
         <Modal
         showModal={showModal}
         setShowModal={setShowModal}
-        currSpeaker={currSpeaker}
+        currSpeaker={currSpeaker}   
         />
         <div className={styles['main']}>
             <div className={styles['head-section']}>
