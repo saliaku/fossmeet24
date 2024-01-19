@@ -77,20 +77,13 @@ const Modal = ({showModal , setShowModal, currWorkshop}) => {
                   Hosts
                 </p>
                 <ul className='font-medium list-disc px-6'>
-                    <li>
-                        John Doe
-                    </li>
-                    <li>
-                        John Doe
-                    </li>
-                    <li>
-                        John Doe
-                    </li>
-                    <li>
-                        John Doe
-                    </li>
-
+                    {currWorkshop.hosts.map((host, index) => (
+                        <li key={index}>
+                        {host}
+                        </li>
+                    ))}
                 </ul>
+
               </div>
               
             </div>

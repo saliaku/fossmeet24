@@ -32,18 +32,14 @@ const Modal = ({ showModal, setShowModal,currSpeaker }) => {
             </p>
             <div className="flex flex-wrap gap-3 mt-3">
                 <div className="pb-4">
-                    <Link href={currSpeaker.global}>
-                    <a>
-                        <FaGlobe size={20} />
-                    </a>
-                    </Link>
+                <Link href={currSpeaker.global}>
+                    <FaGlobe size={20} />
+                </Link>
                 </div>
                 <div>
-                    <Link href={currSpeaker.linkedin}>
-                    <a>
-                        <FaLinkedin size={20} />
-                    </a>
-                    </Link>
+                <Link href={currSpeaker.linkedin} >
+                    <FaLinkedin size={20} />
+                </Link>
                 </div>
             </div>
           </div>

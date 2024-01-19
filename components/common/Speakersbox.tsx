@@ -2,18 +2,13 @@ import Image from 'next/image'
 import styles from './Speakersbox.module.css'
 
 export default function Speakersbox({
-  name,
-  image,
-  description,
-  setShowModal,
-  event,
-  event_detail,
+    speaker,setShowModal, setCurrSpeaker
 }) {
   return (
     <div className={styles['speaker-box']}>
       <div className={styles['img-box']}>
         <Image
-          src={image}
+          src={speaker.image}
           alt="speaker photo"
           width={150}
           height={150}
@@ -25,32 +20,37 @@ export default function Speakersbox({
       <div className={styles['content-box']}>
         <div className={styles['text-box']}>
           {/* Dynamic name & description */}
-          <h1 className={styles['speaker-name']}>{name}</h1>
-          <p className="">{description}</p>
+          <h1 className={styles['speaker-name']}>{speaker.name}</h1>
+          <p className="">{speaker.description}</p>
         </div>
 
         <div className={styles['bottom-btns']}>
           <div className={styles['bottom-icons']}>
+            <a href={speaker.global} target="_blank" rel="noopener noreferrer">
             <Image
-              src="/web.svg"
-              alt="web icon"
-              width={20}
-              height={20}
-              objectFit="contain"
-              style={{ marginRight: '10px' }}
+                src="/web.svg"
+                alt="web icon"
+                width={20}
+                height={20}
+                objectFit="contain"
+                style={{ marginRight: '10px' }}
             />
+            </a>
+            <a href={speaker.linkedin} target="_blank" rel="noopener noreferrer">
             <Image
-              src="/linkedin.svg"
-              alt="linkedin icon"
-              width={20}
-              height={20}
-              objectFit="contain"
+                src="/linkedin.svg"
+                alt="linkedin icon"
+                width={20}
+                height={20}
+                objectFit="contain"
             />
+            </a>
           </div>
           <div className={styles['view-btn']}>
             <button
               onClick={() => {
                 setShowModal(true)
+                setCurrSpeaker(speaker)
               }}
             >
               <Image
@@ -64,8 +64,8 @@ export default function Speakersbox({
         </div>
       </div>
       <div className={styles['talk-box']}>
-        <p className={styles['talk-text']}>{event}</p>
-        <p className={styles['talk-type']}>{event_detail}</p>
+        <p className={styles['talk-text']}>TALK</p>
+        <p className={styles['talk-type']}>{speaker.event_detail}</p>
       </div>
     </div>
   )

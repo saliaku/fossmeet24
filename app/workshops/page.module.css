@@ -10,7 +10,7 @@
   }
   .cards-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: flex-start; 
     align-items: center;
     flex-wrap: wrap; 
     gap: 50px;
@@ -92,8 +92,15 @@
         margin-bottom: 1px;       
         margin-right: 5px; 
     }
+    .cards-box{
+        display: flex;
+        justify-content: center;
+    }
     .cards-container{
-        margin-left: 20px;
-        margin-right: 10px;
+        margin-top: 40px;
+        margin-left: 0px;
+        margin-right: 0px;
+        gap: 50px;
+        justify-content: center;
     }
 }

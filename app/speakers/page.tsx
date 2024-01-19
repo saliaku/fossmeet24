@@ -6,12 +6,14 @@ import Navbar from '@/components/common/Navbar';
 import Footer from '@/components/footer/Footer';
 
 import image from '@/public/phone.png';
+import speakersData from '@/public/speakersData.json';
 import Image from 'next/image';
 import styles from './page.module.css';
 
+import Speakerbox from '@/components/common/Speakersbox';
 const Page = () => {
     const [showModal, setShowModal] = useState(false)
-    const [currSpeaker, setcurrSpeaker] = useState({})
+    const [currSpeaker, setCurrSpeaker] = useState({})
   return (
     <div className={styles['speaker-container']}>
         <Navbar />
@@ -36,18 +38,18 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className={styles['cards-box']}>
+            <div className={styles['cards-box']}>
                 <div className={styles['cards-container']}>
                     {speakersData.map((speaker, index) => (
                         <Speakerbox
                             key={index}
                             setShowModal={setShowModal}
-                            setcurrSpeaker={setcurrSpeaker}
+                            setCurrSpeaker={setCurrSpeaker}
                             speaker={speaker}
                         />
                 ))}
                  </div>
-            </div> */}
+            </div>
         </div>
         <Footer/>
     </div>

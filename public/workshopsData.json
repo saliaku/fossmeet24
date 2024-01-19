@@ -7,7 +7,12 @@
       "description": "Kerala Rustaceans is a group that aims to create a community of Rust enthusiasts...",
       "organizer": "CSEA",
       "organizerLogo": "/csea-small.png",
-      "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+      "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+      "hosts": [
+        "afthab",
+        "binshad",
+        "ameen"
+      ]
     },
     {
         "title": "Rust-workshop",
@@ -18,7 +23,12 @@
         "organizer": "FOSSCell",
         "organizerLogo": "/csea-small.png",
         "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
-      }
+      ,
+      "hosts": [
+        "John Doe",
+        "Jane Smith"
+      ]
+    }
       ,
       {
         "title": "FFmpeg Workshop",
@@ -29,7 +39,13 @@
         "organizer": "CSEA",
         "organizerLogo": "/csea-small.png",
         "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
-      },
+        ,
+        "hosts": [
+            "afthab",
+            "binshad",
+            "ameen"
+          ]
+    },
       {
         "title": "Rust-workshop",
         "image": "/rust.png",
@@ -39,7 +55,13 @@
         "organizer": "FOSSCell",
         "organizerLogo": "/csea-small.png",
         "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
-      },
+        ,
+        "hosts": [
+            "afthab",
+            "binshad",
+            "ameen"
+          ]
+    },
       {
         "title": "Rust-workshop",
         "image": "/rust.png",
@@ -49,28 +71,12 @@
         "organizer": "FOSSCell",
         "organizerLogo": "/csea-small.png",
         "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
-      },
-      {
-        "title": "Rust-workshop",
-        "image": "/rust.png",
-        "date": "18 March",
-        "time": "2hrs",
-        "description": "Kerala Rustaceans is a group that aims to create a community of Rust enthusiasts...",
-        "organizer": "FOSSCell",
-        "organizerLogo": "/csea-small.png",
-        "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
-      }
-      ,
-      {
-        "title": "FFmpeg Workshop",
-        "image": "/r1.png",
-        "date": "27 Jan",
-        "time": "3hrs",
-        "description": "Kerala Rustaceans is a group that aims to create a community of Rust enthusiasts...",
-        "organizer": "CSEA",
-        "organizerLogo": "/csea-small.png",
-        "detail":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
-      }
+        ,"hosts": [
+            "afthab",
+            "binshad",
+            "ameen"
+          ]
+    }
 
   ]
   

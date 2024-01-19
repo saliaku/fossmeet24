@@ -5,9 +5,13 @@ import workdata from '@/public/workshopsData.json'
 import { useState } from 'react'
 import Navbar from '../components/common/Navbar'
 
+import Speakerbox from '@/components/common/Speakersbox'
+import speakerdata from '@/public/speakersData.json'
+
 export default function Home() {
   const [showModal, setShowModal] = useState(false)
   const [currWorkshop,setCurrWorkshop]=useState({});
+  const [currSpeaker,setCurrSpeaker]=useState({});
   return (
     <div>
       <Navbar />
@@ -21,6 +25,13 @@ export default function Home() {
         />
 
         <br></br>
+        <Speakerbox
+          setShowModal={setShowModal}
+          setCurrSpeaker={setCurrSpeaker}
+          speaker={speakerdata[0]}
+        />
+        <br></br>
+
 
         <Footer />
       </main>
