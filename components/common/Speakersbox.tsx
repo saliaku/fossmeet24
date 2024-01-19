@@ -53,7 +53,12 @@ export default function Speakersbox({
                 setShowModal(true)
               }}
             >
-              <Image src={'/arrow_right_alt.png'} width={28} height={28} />
+              <Image
+                src={'/arrow_right_alt.png'}
+                width={28}
+                height={28}
+                alt="right_arrow"
+              />
             </button>
           </div>
         </div>
