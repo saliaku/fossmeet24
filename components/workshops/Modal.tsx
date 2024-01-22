@@ -1,8 +1,7 @@
-import React from 'react'
-import ModalWrapper from '../common/ModalWrapper'
-import Image from 'next/image'
+import Image from 'next/image';
+import ModalWrapper from '../common/ModalWrapper';
 
-const Modal = ({showModal , setShowModal}) => {
+const Modal = ({showModal , setShowModal, currWorkshop}) => {
   return (
     <ModalWrapper>
       {showModal && (
@@ -31,7 +30,7 @@ const Modal = ({showModal , setShowModal}) => {
               <div
               className="w-[132] h-[140] flex-shrink-0">
                 <Image
-                  src="/r1.png"
+                  src={currWorkshop.image}
                   width={140}
                   height={140}
                   alt="workshop image"
@@ -40,21 +39,15 @@ const Modal = ({showModal , setShowModal}) => {
               <div className=" ml-5 mt-4 md:mt-0">
                 <div className="flex space-x-3  items-center">
                   <div className="h-8 bg-gray-200 py-2 px-3 rounded-2xl font-semibold text-sm flex uppercase">
-                    27 Jan
+                    {currWorkshop.date}
                   </div>
                   <div className="h-2 w-2 bg-black rounded-full "></div>
-                  <p className="font-semibold text-sm">3hrs</p>
+                  <p className="font-semibold text-sm">{currWorkshop.time}</p>
                 </div>
-                <h1 className="text-xl sm:text-2xl font-bold mt-2">FFmpeg Workshop</h1>
+                <h1 className="text-xl sm:text-2xl font-bold mt-2">{currWorkshop.title}</h1>
                 <p className="text-wrap mt-2 text-gray-500 text-sm sm:text-base">
-                  Kerala Rustaceans is a group that aims to create a community
-                  of Rust enthusiasts who can learn, collaborate and share
-                  knowledge on projects related to Rust. The group also aims to
-                  promote the use of Rust in the state and to attract more
-                  developers to the language. They usually organise events,
-                  meetups, and hackathons to discuss and learn about the latest
-                  developments in Rust
-                </p>
+                  {currWorkshop.detail}
+                </p>    
               </div>
             </div>
             <div className="min-h-[150px] h-auto w-full flex  md:flex-row px-3">
@@ -68,13 +61,13 @@ const Modal = ({showModal , setShowModal}) => {
                     <div
                     >
                         <Image
-                        src="/csea-small.png"
+                        src={currWorkshop.organizerLogo}
                         width={28}
                         height={28}
                         alt="organizer logo"
                         />
                     </div>
-                    <p className= 'font-medium'>CSEA</p>
+                    <p className= 'font-medium'>{currWorkshop.organizer}</p>
 
                 </div>
                 
@@ -84,20 +77,13 @@ const Modal = ({showModal , setShowModal}) => {
                   Hosts
                 </p>
                 <ul className='font-medium list-disc px-6'>
-                    <li>
-                        John Doe
-                    </li>
-                    <li>
-                        John Doe
-                    </li>
-                    <li>
-                        John Doe
-                    </li>
-                    <li>
-                        John Doe
-                    </li>
-
+                    {currWorkshop.hosts.map((host, index) => (
+                        <li key={index}>
+                        {host}
+                        </li>
+                    ))}
                 </ul>
+
               </div>
               
             </div>
