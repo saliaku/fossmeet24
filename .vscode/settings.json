@@ -9,5 +9,8 @@
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
   "prettier.semi": false,
-  "typescript.tsdk": "Use Workspace Version"
+  "typescript.tsdk": "Use Workspace Version",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
