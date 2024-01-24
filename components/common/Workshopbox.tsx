@@ -1,9 +1,8 @@
-import styles from './Workshopbox.module.css';
 import Image from 'next/image';
-import Link from 'next/link';
+import styles from './Workshopbox.module.css';
 
 
-export default function Workshopbox({ title, image ,date, time, description, organizer, organizerLogo,setShowModal }) {
+export default function Workshopbox({ workshop,setShowModal, setCurrWorkshop }) {
   return (
     <div className={styles['work-shop-box']}>
 
@@ -12,7 +11,7 @@ export default function Workshopbox({ title, image ,date, time, description, org
         
         <div className="logo-img">
               <Image 
-              src={image}
+              src={workshop.image}
               width={330}
               height={320}
               alt="logo of organizer" />
@@ -23,26 +22,26 @@ export default function Workshopbox({ title, image ,date, time, description, org
 
         <div className={styles['date-time']}>
           {/* Dynamic date and time */}
-          <p className={styles['date']}>{date}</p>
+          <p className={styles['date']}>{workshop.date}</p>
           <div className={styles['dot']}></div>
-          <p className={styles['time']} >{time}</p>
+          <p className={styles['time']} >{workshop.time}</p>
         </div>
 
         <div className={styles['text-box']}>
           {/* Dynamic title and description */}
-          <h1 className=''>{title}</h1>
+          <h1 className=''>{workshop.title}</h1>
           
-          <p className=''>{description}</p>
+          <p className=''>{workshop.description}</p>
         </div>
 
         <div className={styles['bottom-btns']}>
           <div className="logo-box">
                 <Image 
-                src={organizerLogo}
+                src={workshop.organizerLogo}
                 width={28}
                 height={28}
                 alt="logo of organizer" />
-                <p>{organizer}</p>
+                <p>{workshop.organizer}</p>
           </div>
 
           <div className={styles['view-btn']}>
@@ -50,6 +49,8 @@ export default function Workshopbox({ title, image ,date, time, description, org
             onClick={
               
               () => {
+              console.log(workshop) 
+              setCurrWorkshop(workshop)
               setShowModal(true)
               }
             }

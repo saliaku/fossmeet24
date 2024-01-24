@@ -1,13 +1,18 @@
 'use client'
-import Speakersbox from '@/components/common/Speakersbox'
 import Workshopbox from '@/components/common/Workshopbox'
 import Footer from '@/components/footer/Footer'
+import workdata from '@/public/workshopsData.json'
 import { useState } from 'react'
 import Navbar from '../components/common/Navbar'
 import Carousel from '@/components/carousel/carousel'
 
+import Speakerbox from '@/components/common/Speakersbox'
+import speakerdata from '@/public/speakersData.json'
+
 export default function Home() {
   const [showModal, setShowModal] = useState(false)
+  const [currWorkshop,setCurrWorkshop]=useState({});
+  const [currSpeaker,setCurrSpeaker]=useState({});
   return (
     <div>
       <Navbar />
@@ -117,6 +122,7 @@ export default function Home() {
           />
         </Carousel>
         <br></br>
+
         <Footer />
       </main>
     </div>
