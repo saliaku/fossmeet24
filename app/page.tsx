@@ -1,18 +1,16 @@
 'use client'
+import Carousel from '@/components/carousel/carousel'
+import Speakersbox from '@/components/common/Speakersbox'
 import Workshopbox from '@/components/common/Workshopbox'
 import Footer from '@/components/footer/Footer'
-import workdata from '@/public/workshopsData.json'
 import { useState } from 'react'
 import Navbar from '../components/common/Navbar'
-import Carousel from '@/components/carousel/carousel'
 
-import Speakerbox from '@/components/common/Speakersbox'
-import speakerdata from '@/public/speakersData.json'
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false)
-  const [currWorkshop,setCurrWorkshop]=useState({});
-  const [currSpeaker,setCurrSpeaker]=useState({});
+  const [currWorkshop, setCurrWorkshop] = useState({});
+  const [currSpeaker, setCurrSpeaker] = useState({});
   return (
     <div>
       <Navbar />
@@ -20,6 +18,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold mb-8">Hello World!</h1>
         <Carousel>
           <Workshopbox
+            setCurrWorkshop={setCurrWorkshop}
             setShowModal={setShowModal}
             title={'FFmpeg Workshop'}
             image={'/r1.png'}
@@ -33,6 +32,7 @@ export default function Home() {
           />
           <Workshopbox
             setShowModal={setShowModal}
+            setCurrWorkshop={setCurrWorkshop}
             title={'FFmpeg Workshop'}
             image={'/r1.png'}
             date={'27 Jan'}
@@ -44,6 +44,7 @@ export default function Home() {
             organizerLogo={'/csea-small.png'}
           />
           <Workshopbox
+            setCurrWorkshop={setCurrWorkshop}
             setShowModal={setShowModal}
             title={'FFmpeg Workshop'}
             image={'/r1.png'}
@@ -56,6 +57,7 @@ export default function Home() {
             organizerLogo={'/csea-small.png'}
           />
           <Workshopbox
+            setCurrWorkshop={setCurrWorkshop}
             setShowModal={setShowModal}
             title={'FFmpeg Workshop'}
             image={'/r1.png'}
@@ -71,6 +73,7 @@ export default function Home() {
         <br></br>
         <Carousel>
           <Speakersbox
+            setCurrSpeaker={setCurrSpeaker}
             setShowModal={setShowModal}
             name={'Dr. Sasi Kumar'}
             image={'/sasi_kumar.svg'}
@@ -81,6 +84,7 @@ export default function Home() {
             }
           />
           <Speakersbox
+            setCurrSpeaker={setCurrSpeaker}
             setShowModal={setShowModal}
             name={'Dr. Sasi Kumar'}
             image={'/sasi_kumar.svg'}
@@ -91,6 +95,7 @@ export default function Home() {
             }
           />
           <Speakersbox
+            setCurrSpeaker={setCurrSpeaker}
             setShowModal={setShowModal}
             name={'Dr. Sasi Kumar'}
             image={'/sasi_kumar.svg'}
@@ -101,6 +106,7 @@ export default function Home() {
             }
           />
           <Speakersbox
+            setCurrSpeaker={setCurrSpeaker}
             setShowModal={setShowModal}
             name={'Dr. Sasi Kumar'}
             image={'/sasi_kumar.svg'}
@@ -111,6 +117,7 @@ export default function Home() {
             }
           />
           <Speakersbox
+            setCurrSpeaker={setCurrSpeaker}
             setShowModal={setShowModal}
             name={'Dr. Sasi Kumar'}
             image={'/sasi_kumar.svg'}

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './Speakersbox.module.css'
 
 export default function Speakersbox({
-    speaker,setShowModal, setCurrSpeaker
+  setShowModal, setCurrSpeaker, ...speaker
 }) {
   return (
     <div className={styles['speaker-box']}>
@@ -27,23 +27,23 @@ export default function Speakersbox({
         <div className={styles['bottom-btns']}>
           <div className={styles['bottom-icons']}>
             <a href={speaker.global} target="_blank" rel="noopener noreferrer">
-            <Image
+              <Image
                 src="/web.svg"
                 alt="web icon"
                 width={20}
                 height={20}
                 objectFit="contain"
                 style={{ marginRight: '10px' }}
-            />
+              />
             </a>
             <a href={speaker.linkedin} target="_blank" rel="noopener noreferrer">
-            <Image
+              <Image
                 src="/linkedin.svg"
                 alt="linkedin icon"
                 width={20}
                 height={20}
                 objectFit="contain"
-            />
+              />
             </a>
           </div>
           <div className={styles['view-btn']}>
