@@ -1,8 +1,7 @@
-.work-shop-box {
+.speaker-box {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 574px;
   width: 330px;
 
   background-color: rgb(255, 255, 255);
@@ -11,7 +10,10 @@
 }
 
 .img-box {
-  height: fit-content;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex: 20%;
   width: 100%;
 }
 
@@ -24,15 +26,6 @@
   gap: 10px;
 }
 
-.date-time {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  font-size: 13px;
-
-  gap: 8px;
-}
-
 .dot {
   height: 4px;
   width: 4px;
@@ -40,25 +33,6 @@
   align-self: center;
   background-color: #000000;
   border-radius: 50%;
-}
-
-.date {
-  padding: 4px 7px 4px 7px;
-  background-color: #e8e8e8;
-  font-size: 13px;
-  border-radius: 20px;
-  font-weight: 600;
-
-  text-transform: uppercase;
-}
-
-.time {
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 13px;
-  letter-spacing: -4%;
-  align-self: center;
-  justify-self: center;
 }
 
 .text-box {
@@ -93,13 +67,12 @@
 }
 
 .bottom-btns {
+  margin-top: 13px;
   width: 100%;
   display: flex;
   flex-direction: row;
-
-  align-items: center;
-
   justify-content: space-between;
+  align-items: flex-end;
 }
 .bottom-btns .logo-box {
   left: 0;
@@ -114,6 +87,10 @@
   line-height: 14.3px;
   letter-spacing: -2%;
   color: #000;
+}
+
+.bottom-icons {
+  display: flex;
 }
 
 .view-btn {
@@ -131,4 +108,40 @@
   background-color: #fff;
 }
 
-/* make it responsive */
+.rounded-image {
+  border-radius: 50%;
+}
+
+.speaker-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.talk-box {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.talk-text {
+  color: white;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.talk-type {
+  color: white;
+  padding: 5px;
+  font-weight: 300;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.speaker-name {
+  margin-bottom: 10px;
+}
