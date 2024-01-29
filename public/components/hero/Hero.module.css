@@ -1,0 +1,84 @@
+.heroContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+  min-height: 70vh;
+  flex-wrap: wrap;
+}
+
+.heroLeft {
+  margin-top: 7rem;
+  margin-left: 5rem;
+}
+
+.eventDetails {
+  display: flex;
+}
+
+.fossmeetHeading {
+  color: black;
+  font-size: 78px;
+  font-weight: 700;
+}
+
+.landmark,
+.calendar {
+  display: flex;
+  padding: 1rem;
+}
+
+.spaceLeft {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.toCentre {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.line {
+  margin-bottom: 2rem;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1400px) {
+  .heroContainer {
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 2rem;
+  }
+
+  .heroRight {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .fossmeetHeading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .eventDetails {
+    justify-content: center;
+  }
+
+  .heroLeft {
+    margin-top: 7rem;
+    margin-left: 0;
+  }
+
+  .spaceLeft {
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .fossmeetHeading {
+    font-size: 50px;
+  }
+}
