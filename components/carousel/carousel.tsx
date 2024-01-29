@@ -1,17 +1,16 @@
 'use client'
+import React, { useState } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState } from 'react'
-import React from "react";
+import "slick-carousel/slick/slick.css";
 import Button from "../Buttons/Button";
 
 interface ArrowProps {
     onClick: React.MouseEventHandler<HTMLDivElement>;
-  }
+}
 
-  
-function Carousel({children}) {
+
+function Carousel({ children }) {
     const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
         <div className="custom-arrow custom-prev" onClick={onClick}>
             <Button isLeft={true} />
@@ -52,10 +51,10 @@ function Carousel({children}) {
         slidesToScroll: getNoOfSlides(),
         prevArrow: <PrevArrow onClick={function (event: React.MouseEvent<HTMLDivElement, MouseEvent>): void {
             throw new Error("Function not implemented.");
-        } } />,
+        }} />,
         nextArrow: <NextArrow onClick={function (event: React.MouseEvent<HTMLDivElement, MouseEvent>): void {
             throw new Error("Function not implemented.");
-        } } />,
+        }} />,
     };
 
 

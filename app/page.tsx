@@ -3,6 +3,7 @@ import Carousel from '@/components/carousel/carousel'
 import Speakersbox from '@/components/common/Speakersbox'
 import Workshopbox from '@/components/common/Workshopbox'
 import Footer from '@/components/footer/Footer'
+import Hero from '@/components/hero/Hero'
 import { useState } from 'react'
 import Navbar from '../components/common/Navbar'
 
@@ -14,8 +15,8 @@ export default function Home() {
   return (
     <div>
       <Navbar />
+      <Hero />
       <main>
-        <h1 className="text-4xl font-bold mb-8">Hello World!</h1>
         <Carousel>
           <Workshopbox
             setCurrWorkshop={setCurrWorkshop}

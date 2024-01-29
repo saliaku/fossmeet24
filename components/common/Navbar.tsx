@@ -15,9 +15,8 @@ function NavBar() {
                 <h2 className="text-2xl text-black font-bold md:px-8">
                   FOSSMeet&apos; 24
                   <span
-                    className={`absolute h-full border-l-2 border-black top-1/2 transform -translate-y-1/2 ml-6 ${
-                      navbar ? 'hidden' : ''
-                    }`}
+                    className={`absolute h-full border-l-2 border-black top-1/2 transform -translate-y-1/2 ml-6 ${navbar ? 'hidden' : ''
+                      }`}
                   ></span>
                 </h2>
               </Link>
@@ -52,9 +51,8 @@ function NavBar() {
           </div>
           <div>
             <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 block' : 'hidden'
-              }`}
+              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 block' : 'hidden'
+                }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="text-sm font-bold text-black py-2 md:px-4 text-center border-b-2 md:border-b-0  hover:bg-fm-orange  border-fm-orange  md:hover:text-fm-orange md:hover:bg-transparent">
