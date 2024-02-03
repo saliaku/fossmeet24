@@ -99,6 +99,7 @@ const SchedulePage = () => {
       >
         <Image
           src={logo}
+          alt={logo}
           className="schedulePageHeadLogo
                                             md:h-[45%]
                                             h-[45%]

@@ -9,9 +9,11 @@ import { Speaker } from '@/sanity/schemas/speaker';
 import Image from 'next/image';
 import styles from './page.module.css';
 
-// export const revalidate = 3600
+export const revalidate = 3600
+
 export default async function Page() {
     const speakers: Speaker[] = await client.fetch(`*[_type=="speaker"]`)
+
     return (
         <div className={styles['speaker-container']}>
             <Navbar />

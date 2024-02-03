@@ -60,11 +60,11 @@ function NavBar() {
                     WORKSHOPS
                   </Link>
                 </li>
-                <li className="text-sm font-bold text-black py-2 px-4 text-center  border-b-2 md:border-b-0  hover:bg-fm-orange  border-fm-orange  md:hover:text-fm-orange md:hover:bg-transparent">
+                {/* <li className="text-sm font-bold text-black py-2 px-4 text-center  border-b-2 md:border-b-0  hover:bg-fm-orange  border-fm-orange  md:hover:text-fm-orange md:hover:bg-transparent">
                   <Link href="/events" onClick={() => setNavbar(!navbar)}>
                     EVENTS
                   </Link>
-                </li>
+                </li> */}
                 <li className="text-sm font-bold text-black py-2 px-4 text-center  border-b-2 md:border-b-0  hover:bg-fm-orange  border-fm-orange  md:hover:text-fm-orange md:hover:bg-transparent">
                   <Link href="/speakers" onClick={() => setNavbar(!navbar)}>
                     SPEAKERS

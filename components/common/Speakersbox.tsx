@@ -1,8 +1,8 @@
-import { urlForImage } from '@/sanity/lib/image'
-import { Speaker } from '@/sanity/schemas/speaker'
-import Image from 'next/image'
-import { Dispatch, SetStateAction } from 'react'
-import styles from './Speakersbox.module.css'
+import { urlForImage } from '@/sanity/lib/image';
+import { Speaker } from '@/sanity/schemas/speaker';
+import Image from 'next/image';
+import { Dispatch, SetStateAction } from 'react';
+import styles from './Speakersbox.module.css';
 
 export default function Speakersbox({
   setShowModal, setCurrSpeaker, speaker
@@ -20,7 +20,6 @@ export default function Speakersbox({
           width={150}
           height={150}
           className={styles['rounded-image']}
-          objectFit="contain"
         />
       </div>
 
@@ -39,7 +38,6 @@ export default function Speakersbox({
                 alt="web icon"
                 width={20}
                 height={20}
-                objectFit="contain"
                 style={{ marginRight: '10px' }}
               />
             </a>
@@ -49,7 +47,6 @@ export default function Speakersbox({
                 alt="linkedin icon"
                 width={20}
                 height={20}
-                objectFit="contain"
               />
             </a>
           </div>

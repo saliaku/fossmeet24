@@ -21,7 +21,6 @@ const PutBg = ({ color, speakerImg }) => {
     }
   }, [color])
 
-  console.log(colorChoice)
   return (
     <div
       className={`rounded-full
