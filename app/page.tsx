@@ -9,7 +9,7 @@ export const revalidate = 3600
 
 
 export default async function Home() {
-  const speakers: Speaker[] = await client.fetch(`*[_type=="speaker"]`)
+  const speakers = await client.fetch<Speaker[]>(`*[_type=="speaker"]`)
 
   return (
     <div>

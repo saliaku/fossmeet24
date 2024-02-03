@@ -12,7 +12,7 @@ import styles from './page.module.css';
 export const revalidate = 3600
 
 export default async function Page() {
-    const speakers: Speaker[] = await client.fetch(`*[_type=="speaker"]`)
+    const speakers = await client.fetch<Speaker[]>(`*[_type=="speaker"]`)
 
     return (
         <div className={styles['speaker-container']}>
