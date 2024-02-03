@@ -1,14 +1,21 @@
+import { urlForImage } from '@/sanity/lib/image'
+import { Speaker } from '@/sanity/schemas/speaker'
 import Image from 'next/image'
+import { Dispatch, SetStateAction } from 'react'
 import styles from './Speakersbox.module.css'
 
 export default function Speakersbox({
-  setShowModal, setCurrSpeaker, ...speaker
+  setShowModal, setCurrSpeaker, speaker
+}: {
+  speaker: Speaker,
+  setShowModal: Dispatch<SetStateAction<boolean>>,
+  setCurrSpeaker: Dispatch<SetStateAction<Speaker>>
 }) {
   return (
     <div className={styles['speaker-box']}>
       <div className={styles['img-box']}>
         <Image
-          src={speaker.image}
+          src={urlForImage(speaker.image)}
           alt="speaker photo"
           width={150}
           height={150}
@@ -26,7 +33,7 @@ export default function Speakersbox({
 
         <div className={styles['bottom-btns']}>
           <div className={styles['bottom-icons']}>
-            <a href={speaker.global} target="_blank" rel="noopener noreferrer">
+            <a href={speaker.socials[0].link} target="_blank" rel="noopener noreferrer">
               <Image
                 src="/web.svg"
                 alt="web icon"
@@ -36,7 +43,7 @@ export default function Speakersbox({
                 style={{ marginRight: '10px' }}
               />
             </a>
-            <a href={speaker.linkedin} target="_blank" rel="noopener noreferrer">
+            <a href={speaker.socials[1].link} target="_blank" rel="noopener noreferrer">
               <Image
                 src="/linkedin.svg"
                 alt="linkedin icon"
@@ -65,7 +72,7 @@ export default function Speakersbox({
       </div>
       <div className={styles['talk-box']}>
         <p className={styles['talk-text']}>TALK</p>
-        <p className={styles['talk-type']}>{speaker.event_detail}</p>
+        <p className={styles['talk-type']}>{speaker.talk}</p>
       </div>
     </div>
   )

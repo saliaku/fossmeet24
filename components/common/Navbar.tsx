@@ -56,22 +56,27 @@ function NavBar() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="text-sm font-bold text-black py-2 md:px-4 text-center border-b-2 md:border-b-0  hover:bg-fm-orange  border-fm-orange  md:hover:text-fm-orange md:hover:bg-transparent">
-                  <Link href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/workshops" onClick={() => setNavbar(!navbar)}>
                     WORKSHOPS
                   </Link>
                 </li>
                 <li className="text-sm font-bold text-black py-2 px-4 text-center  border-b-2 md:border-b-0  hover:bg-fm-orange  border-fm-orange  md:hover:text-fm-orange md:hover:bg-transparent">
-                  <Link href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/events" onClick={() => setNavbar(!navbar)}>
                     EVENTS
                   </Link>
                 </li>
                 <li className="text-sm font-bold text-black py-2 px-4 text-center  border-b-2 md:border-b-0  hover:bg-fm-orange  border-fm-orange  md:hover:text-fm-orange md:hover:bg-transparent">
-                  <Link href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/speakers" onClick={() => setNavbar(!navbar)}>
                     SPEAKERS
                   </Link>
                 </li>
                 <li className="text-sm font-bold text-black py-2 px-4 text-center  border-b-2 md:border-b-0  hover:bg-fm-orange  border-fm-orange  md:hover:text-fm-orange md:hover:bg-transparent">
-                  <Link href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/schedule" onClick={() => setNavbar(!navbar)}>
+                    SCHEDULE
+                  </Link>
+                </li>
+                <li className="text-sm font-bold text-black py-2 px-4 text-center  border-b-2 md:border-b-0  hover:bg-fm-orange  border-fm-orange  md:hover:text-fm-orange md:hover:bg-transparent">
+                  <Link href="/#contact" onClick={() => setNavbar(!navbar)}>
                     CONTACT
                   </Link>
                 </li>

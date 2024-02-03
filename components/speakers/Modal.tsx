@@ -1,5 +1,8 @@
+import { urlForImage } from '@/sanity/lib/image'
+import { Speaker } from '@/sanity/schemas/speaker'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Dispatch, SetStateAction } from 'react'
 import {
   FaGlobe,
   FaLinkedin,
@@ -7,7 +10,11 @@ import {
 import ModalWrapper from '../common/ModalWrapper'
 
 
-const Modal = ({ showModal, setShowModal, currSpeaker }) => {
+const Modal = ({ showModal, setShowModal, currSpeaker }: {
+  showModal: boolean,
+  setShowModal: Dispatch<SetStateAction<boolean>>
+  currSpeaker: Speaker
+}) => {
   return (
     <ModalWrapper>
       {showModal && (
@@ -25,19 +32,19 @@ const Modal = ({ showModal, setShowModal, currSpeaker }) => {
           <div className="p-4">
             <div
             >
-              <Image src={currSpeaker.image} width={80} height={80} className='w-[80px] h-[80px] sm:h-[135px] sm:w-[135px]' alt="Atharv" />
+              <Image src={urlForImage(currSpeaker.image)} width={80} height={80} className='w-[80px] h-[80px] sm:h-[135px] sm:w-[135px]' alt="Atharv" />
               <h1 className="mt-2 font-bold text-xl sm:text-2xl">{currSpeaker.name}</h1>
               <p className="text-gray-500 text-sm sm:text-base">
-                {currSpeaker.detail}
+                {currSpeaker.description}
               </p>
               <div className="flex flex-wrap gap-3 mt-3">
                 <div className="pb-4">
-                  <Link href={currSpeaker.global}>
+                  <Link href={currSpeaker.socials[0].link}>
                     <FaGlobe size={20} />
                   </Link>
                 </div>
                 <div>
-                  <Link href={currSpeaker.linkedin} >
+                  <Link href={currSpeaker.socials[1].link} >
                     <FaLinkedin size={20} />
                   </Link>
                 </div>
@@ -58,7 +65,7 @@ const Modal = ({ showModal, setShowModal, currSpeaker }) => {
 
             </button>
             <p className='text-sm sm:text-base'>
-              {currSpeaker.talk_info}
+              {currSpeaker.talk}
             </p>
           </div>
         </div>

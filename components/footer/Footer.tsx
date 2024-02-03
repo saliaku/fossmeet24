@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <>
       <div className={styles.footerContainer}>
-        <div className={styles.footerLeft}>
+        <div className={styles.footerLeft} id="contact">
           <p>
             👋<span className={styles.contactFooter}>Contact</span>
           </p>

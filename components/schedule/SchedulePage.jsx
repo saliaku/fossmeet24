@@ -1,3 +1,4 @@
+'use client'
 import TimeCardv3 from '@/components/schedule/TimeCardv3'
 import TimeCardv4 from '@/components/schedule/TimeCardv4'
 import sample from '@/public/s.png'
