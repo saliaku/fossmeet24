@@ -41,7 +41,7 @@ export default function Speakersbox({
                 style={{ marginRight: '10px' }}
               />
             </a>
-            <a href={speaker.socials[1].link} target="_blank" rel="noopener noreferrer">
+            <a href={speaker.socials[1]?.link ?? "/"} target="_blank" rel="noopener noreferrer">
               <Image
                 src="/linkedin.svg"
                 alt="linkedin icon"

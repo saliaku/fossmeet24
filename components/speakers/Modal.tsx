@@ -44,7 +44,7 @@ const Modal = ({ showModal, setShowModal, currSpeaker }: {
                   </Link>
                 </div>
                 <div>
-                  <Link href={currSpeaker.socials[1].link} >
+                  <Link href={currSpeaker.socials[1]?.link ?? "/"} >
                     <FaLinkedin size={20} />
                   </Link>
                 </div>
