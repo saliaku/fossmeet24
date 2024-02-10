@@ -15,11 +15,8 @@ export default async function Home() {
     <div>
       <Navbar />
       <Hero />
-      <main>
-        <HomeContainer speakers={speakers} />
-
-        <Footer />
-      </main>
+      <HomeContainer speakers={speakers} />
+      <Footer />
     </div>
   )
 }
