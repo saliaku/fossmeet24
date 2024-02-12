@@ -1,23 +1,8 @@
-<svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_467_604)">
-<rect x="0.5" width="46" height="46" rx="23" fill="white" shape-rendering="crispEdges"/>
-<rect x="1.5" y="1" width="44" height="44" rx="22" stroke="black" stroke-width="2" shape-rendering="crispEdges"/>
-<mask id="mask0_467_604" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="11" width="25" height="24">
-<rect x="11.5" y="11" width="24" height="24" fill="#D9D9D9"/>
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_467_609" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+<rect x="0.5" width="24" height="24" fill="#D9D9D9"/>
 </mask>
-<g mask="url(#mask0_467_604)">
-<path d="M20.5 27.5C19.8 27.5 19.2083 27.2583 18.725 26.775C18.2417 26.2917 18 25.7 18 25C18 24.3 18.2417 23.7083 18.725 23.225C19.2083 22.7417 19.8 22.5 20.5 22.5C21.2 22.5 21.7917 22.7417 22.275 23.225C22.7583 23.7083 23 24.3 23 25C23 25.7 22.7583 26.2917 22.275 26.775C21.7917 27.2583 21.2 27.5 20.5 27.5ZM16.5 33C15.95 33 15.4792 32.8042 15.0875 32.4125C14.6958 32.0208 14.5 31.55 14.5 31V17C14.5 16.45 14.6958 15.9792 15.0875 15.5875C15.4792 15.1958 15.95 15 16.5 15H17.5V13H19.5V15H27.5V13H29.5V15H30.5C31.05 15 31.5208 15.1958 31.9125 15.5875C32.3042 15.9792 32.5 16.45 32.5 17V31C32.5 31.55 32.3042 32.0208 31.9125 32.4125C31.5208 32.8042 31.05 33 30.5 33H16.5ZM16.5 31H30.5V21H16.5V31ZM16.5 19H30.5V17H16.5V19Z" fill="#1C1B1F"/>
+<g mask="url(#mask0_467_609)">
+<path d="M9.5 16.5C8.8 16.5 8.20833 16.2583 7.725 15.775C7.24167 15.2917 7 14.7 7 14C7 13.3 7.24167 12.7083 7.725 12.225C8.20833 11.7417 8.8 11.5 9.5 11.5C10.2 11.5 10.7917 11.7417 11.275 12.225C11.7583 12.7083 12 13.3 12 14C12 14.7 11.7583 15.2917 11.275 15.775C10.7917 16.2583 10.2 16.5 9.5 16.5ZM5.5 22C4.95 22 4.47917 21.8042 4.0875 21.4125C3.69583 21.0208 3.5 20.55 3.5 20V6C3.5 5.45 3.69583 4.97917 4.0875 4.5875C4.47917 4.19583 4.95 4 5.5 4H6.5V2H8.5V4H16.5V2H18.5V4H19.5C20.05 4 20.5208 4.19583 20.9125 4.5875C21.3042 4.97917 21.5 5.45 21.5 6V20C21.5 20.55 21.3042 21.0208 20.9125 21.4125C20.5208 21.8042 20.05 22 19.5 22H5.5ZM5.5 20H19.5V10H5.5V20ZM5.5 8H19.5V6H5.5V8Z" fill="black"/>
 </g>
-</g>
-<defs>
-<filter id="filter0_d_467_604" x="0.5" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dx="2" dy="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_467_604"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_467_604" result="shape"/>
-</filter>
-</defs>
 </svg>

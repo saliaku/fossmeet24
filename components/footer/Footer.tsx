@@ -1,121 +1,60 @@
-import Image from 'next/image'
-import {
-  FaInstagram,
-  FaLinkedinIn,
-  FaMastodon,
-  FaTelegram,
-  FaTwitter,
-} from 'react-icons/fa'
 import styles from './Footer.module.css'
 
-import CallImage from '@/public/call.svg'
-import EmailImage from '@/public/email.svg'
-
-const Footer = () => {
-  const email = 'fosscell@nitc.ac.in'
-  const mailtoLink = `mailto:${email}`
+export default function Footer() {
   return (
-    <>
-      <div className={styles.footerContainer}>
-        <div className={styles.footerLeft} id="contact">
-          <p>
-            👋<span className={styles.contactFooter}>Contact</span>
-          </p>
-          <p className={styles.getInTouch}>
-            Get in touch
-            <br /> with us
-          </p>
-        </div>
-        <div className={styles.footerRight}>
-          <div className={styles.footerRightTop}>
-            <div className={styles.footerRightTopLeft}>
-              <a href={mailtoLink} target="_blank" rel="noopener noreferrer">
-                <Image
-                  src={EmailImage}
-                  alt="email.png"
-                  className={styles.spaceRight}
-                  width={50}
-                  height={50}
-                />
-              </a>
-              <p>
-                <b className={styles.toBold}>Email</b>
-                <br />
-                fosscell@nitc.ac.in
-              </p>
+    <footer className={styles['footer']} id="contact">
+      <div className='outer-margin'>
+        <div className='inner-margin'>
+          <div className={styles['top']}>
+            <div className={styles['left']}>
+              <div className={styles['contact-wrapper']}>
+                <img src='/waving.png' alt='Hello' />
+                <span>Contact</span>
+              </div>
+              <h4>Get in touch with us</h4>
             </div>
-            <div className={styles.footerRightTopRight}>
-              <Image
-                src={CallImage}
-                alt="call.png"
-                className={styles.spaceRight}
-                width={50}
-                height={50}
-              />
-              <p>
-                <b className={styles.toBold}>Convenor</b>
-                <br />
-                +91-9876543
-              </p>
-            </div>
-          </div>
-          <div className={styles.footerRightBottom}>
-            <p>
-              <b className={`${styles.spaceLeft} ${styles.toBold}`}>Social</b>
-            </p>
-            <div className={styles.socialLinks}>
-              <a
-                href="https://telegram.me/foss_meet"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaTelegram />
-              </a>
-              <a
-                href="https://twitter.com/fosscell"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="https://www.instagram.com/fosscellnitc/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/foss-cell-nitc/mycompany/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-              <a
-                href="https://www.mastodon.social/@FOSSCell@floss.social"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaMastodon />
-              </a>
+
+            <div className={styles['right']}>
+              <div className={styles['contact-items-wrapper']}>
+                <div className={styles['contact-item']}>
+                  <div className={styles['contact-item-icon-wrapper']} style={{ backgroundColor: '#F97070' }}>
+                    <img src='/mail.svg' alt='Email' />
+                  </div>
+                  <div className={styles['contact-item-text-wrapper']}>
+                    <span className={styles['contact-item-title']}>Email</span>
+                    <span className={styles['contact-item-value']}>fosscell@nitc.ac.in</span>
+                  </div>
+                </div>
+
+                <div className={styles['contact-item']}>
+                  <div className={styles['contact-item-icon-wrapper']} style={{ backgroundColor: '#7FE0A6' }}>
+                    <img src='/phone.svg' alt='Phone' />
+                  </div>
+                  <div className={styles['contact-item-text-wrapper']}>
+                    <span className={styles['contact-item-title']}>Phone</span>
+                    <span className={styles['contact-item-value']}>+91 12345 67890</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles['social']}>
+                <span className={styles['social-title']}>Social</span>
+                <div className={styles['social-icons-wrapper']}>
+                  <a href="https://telegram.me/foss_meet" target="_blank" rel="noreferrer noopener"><img src="/telegram.svg" alt="Telegram" /></a>
+                  <a href="https://www.instagram.com/fosscellnitc/" target="_blank" rel="noreferrer noopener"><img src="/instagram.svg" alt="Instagram" /></a>
+                  <a href="https://twitter.com/fosscell" target="_blank" rel="noreferrer noopener"><img src="/twitter.svg" alt="Twitter" /></a>
+                  <a href="https://www.mastodon.social/@FOSSCell@floss.social" target="_blank" rel="noreferrer noopener"><img src="/mastadon.svg" alt="Mastodon" /></a>
+                  <a href="https://www.linkedin.com/company/foss-cell-nitc/mycompany/" target="_blank" rel="noreferrer noopener"><img src="/linkedin-black.svg" alt="LinkedIn" /></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className={styles.boldBorder}></div>
-      <div className={styles.extremeBottomSection}>
-        <div className={styles.extremeBottomSectionLeft}>
-          <p className={styles.footerEventName}>FOSSMeet’24</p>
-          <div className={styles.boldVerticalLine}></div>
-        </div>
-        <p className={styles.footerEventInfo}>
-          An event conducted by FOSSCell of National Institute of Technology
-          Calicut
-        </p>
+      <div className={styles['bottom']}>
+        <div className={styles['logo']}>FOSSMeet&apos;24</div>
+        <span>An event conducted by FOSSCell of National Institute of Technology Calicut</span>
       </div>
-    </>
+    </footer>
   )
 }
-
-export default Footer

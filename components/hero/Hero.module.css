@@ -1,84 +1,164 @@
-.heroContainer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 8rem;
-  min-height: 70vh;
-  flex-wrap: wrap;
+.hero {
+	height: calc(100vh - 70px);
+	min-height: 650px;
+	max-height: 1000px;
+	width: 100%;
+	border-bottom: var(--stroke);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
 }
 
-.heroLeft {
-  margin-top: 7rem;
-  margin-left: 5rem;
+.container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	gap: 64px;
+	padding: 0 48px;
 }
 
-.eventDetails {
-  display: flex;
+.left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+	height: 100%;
+	display: flex;
 }
 
-.fossmeetHeading {
-  color: black;
-  font-size: 78px;
-  font-weight: 700;
+.hero-image {
+	height: 500px;
 }
 
-.landmark,
-.calendar {
-  display: flex;
-  padding: 1rem;
+.left h1 {
+	font-size: 72px;
+	font-weight: 700;
+	letter-spacing: -4px;
+	line-height: 1;
 }
 
-.spaceLeft {
-  margin-left: 1rem;
-  margin-top: 0.5rem;
+.items-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 34px;
 }
 
-.toCentre {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  cursor: pointer;
+.item {
+	display: flex;
+	align-items: center;
+	gap: 16px;
 }
 
-.line {
-  margin-bottom: 2rem;
-  border: 1px solid black;
+.item-text {
+	font-size: 20px;
+	font-weight: 500;
+	white-space: nowrap;
 }
 
-@media screen and (max-width: 1400px) {
-  .heroContainer {
-    flex-direction: column;
-    height: fit-content;
-    margin-top: 2rem;
-  }
-
-  .heroRight {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  .fossmeetHeading {
-    display: flex;
-    justify-content: center;
-  }
-
-  .eventDetails {
-    justify-content: center;
-  }
-
-  .heroLeft {
-    margin-top: 7rem;
-    margin-left: 0;
-  }
-
-  .spaceLeft {
-    margin-left: 0.5rem;
-  }
+.circle {
+	width: 46px;
+	height: 46px;
+	border: var(--stroke);
+	border-radius: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 2px 2px 0 #000;
+	flex-shrink: 0;
 }
 
-@media screen and (max-width: 800px) {
-  .fossmeetHeading {
-    font-size: 50px;
-  }
+.circle img {
+	width: 24px;
+	height: 24px;
+}
+
+.cta-button {
+	height: 54px;
+	width: 200px;
+	border-radius: 100px;
+	border: var(--stroke);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 2px 2px 0 #000;
+	background-color: var(--orange);
+	transition: var(--default-transition);
+}
+
+.cta-button:hover {
+	background-color: var(--orange-dark);
+}
+
+.cta-button:active {
+	scale: 0.95;
+}
+
+.cta-button span {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.cta-button img {
+	transition: var(--default-transition);
+}
+
+.cta-button:hover img {
+	rotate: 45deg;
+}
+
+@media (max-width: 900px) {
+	.hero {
+		height: calc(100vh - 50px);
+	}
+
+	.container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		height: 100%;
+		gap: 0;
+		padding: 0;
+		margin: 0 -56px;
+	}
+
+	.left {
+		height: unset;
+		padding: 56px 0 64px 0;
+		margin: 0 80px;
+		gap: 26px;
+	}
+
+	.hero-image {
+		height: 350px;
+		flex-shrink: 0;
+	}
+
+	.left h1 {
+		font-size: 45px;
+		letter-spacing: -2px;
+	}
+
+	.items-wrapper {
+		gap: 22px;
+	}
+
+	.item {
+		gap: 12px;
+	}
+
+	.circle {
+		width: 46px;
+		height: 46px;
+	}
+
+	.item-text {
+		font-size: 18px;
+	}
+
+	.cta-button {
+		height: 50px;
+		width: 150px;
+		padding-left: 10px;
+	}
 }

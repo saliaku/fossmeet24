@@ -16,6 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head><title>FOSSMeet&apos;24 – FOSSCell, NIT Calicut</title></head>
       <body className={inter.className}>{children}</body>
     </html>
   )
