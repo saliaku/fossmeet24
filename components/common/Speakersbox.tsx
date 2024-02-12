@@ -8,13 +8,15 @@ export default function Speakersbox({
   setShowModal,
   setCurrSpeaker,
   speaker,
+  width
 }: {
   speaker: Speaker
   setShowModal: Dispatch<SetStateAction<boolean>>
   setCurrSpeaker: Dispatch<SetStateAction<Speaker>>
+  width: string
 }) {
   return (
-    <div className={styles['speaker-box']}>
+    <div className={styles['speaker-box']} style={{ width: width }}>
       <div className={styles['content-box']}>
         <Image
           src={urlForImage(speaker.image)}
