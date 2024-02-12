@@ -15,7 +15,7 @@ export default function NavBar() {
         <Link href={'/speakers'}>Speakers</Link>
         <Link href={'/schedule'}>Schedule</Link>
         <Link href={'/sponsors'}>Sponsors</Link>
-        <Link href={'/#contact'}>Contact</Link>
+        <Link href={'#contact'}>Contact</Link>
         <Link href="/register" className={styles["register-btn"]}>
           <span>Register</span>
           <img src="arrow_right_alt.svg" alt='External link' />
@@ -40,7 +40,7 @@ export default function NavBar() {
           <Link href={'/speakers'}>Speakers</Link>
           <Link href={'/schedule'}>Schedule</Link>
           <Link href={'/sponsors'}>Sponsors</Link>
-          <Link href={'/#contact'}>Contact</Link>
+          <Link href={'#contact'}>Contact</Link>
           <Link href="/register" className={styles["register-btn"]}>
             <span>Register</span>
             <img src="arrow_right_alt.svg" alt='External link' />
