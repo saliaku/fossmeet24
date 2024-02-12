@@ -34,7 +34,9 @@ export default function Home() {
               key={idx}
               setCurrSpeaker={setCurrSpeaker}
               setShowModal={setShowModal}
-              speaker={speaker} />
+              speaker={speaker}
+              width=""
+            />
           ))}
         </Carousel>
       </div>
