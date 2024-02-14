@@ -16,7 +16,14 @@
 	border-right: var(--stroke);
 	display: flex;
 	align-items: center;
-}
+	color: black; /* Default color */
+	text-decoration: none; /* Remove underline from link */
+  }
+  
+  .logo:hover {
+	color: rgb(231, 160, 9); /* Change color to orange on hover */
+  }
+  
 
 .links-wrapper {
 	display: flex;
