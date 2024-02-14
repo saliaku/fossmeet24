@@ -11,7 +11,9 @@ export default function Footer() {
                 <img src='/waving.png' alt='Hello' />
                 <span>Contact</span>
               </div>
-              <h4>Get in touch with us</h4>
+              <div className={styles['h4-style']}>
+                <p >Get in touch with us</p>
+              </div>
             </div>
 
             <div className={styles['right']}>
@@ -55,6 +57,7 @@ export default function Footer() {
         <div className={styles['logo']}>FOSSMeet&apos;24</div>
         <span>An event conducted by FOSSCell NITC and CSEA</span>
       </div>
-    </footer>
+    </footer >
+
   )
 }
