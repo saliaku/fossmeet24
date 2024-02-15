@@ -17,7 +17,7 @@ export default function Hero() {
 						</div>
 						<div className={styles['item']}>
 							<div className={styles['circle']}>
-								<img src="/calendar.svg" alt="Location" />
+								<img src="/Calendar.svg" alt="Location" />
 							</div>
 							<span className={styles['item-text']}>Mar 15, 16, 17</span>
 						</div>
