@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.slider{
+    font-family: Inter;
+    margin-top:100px;
+    margin-inline: 100px;
+}
+.slider-heading-container{
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+    padding: 0 90px 0 90px;
+}
+.slider-heading-inner-container{
+    display: flex;
+    align-items: end;
+}
+.slider-heading-img-container{
+    height:70px;
+    width:57px;
+    display: flex;
+    margin-right: 16px;
+}
+.slider-header-img{
+    height:100%;
+    width:100%;
+}
+
+.slider-heading-thin{
+    font-size:15px;
+    font-weight: 600;
+    line-height: 23px;
+    color:rgba(0, 0, 0, 0.6);
+    ;
+}
+.slider-heading-bold{
+    font-size:56px;
+    font-weight: 700;
+    line-height: 67px;
+}
+
+.slider-view-all{
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid black;
+    box-shadow: 3px 3px black;
+    padding: 12px 24px;
+    border-radius: 24px;
+    background-color: #FF8731;
+}
+.slider-view-all:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* custom swiper */
+.slider-container{
+    margin-top: 50px;
+    width:100%;
+    position: relative;
+}
+
+.slider-button-left{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    box-shadow: 3px 3px black;
+    border-radius: 25px;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-button-right{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    box-shadow: 3px 3px black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-button-left:hover{
+    cursor:pointer;
+}
+.slider-button-right:hover{
+    cursor: pointer;
+}
+
+.slider-div-container{
+    position:relative;
+    margin-inline:90px;
+    height: max-content;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+.slider-card-container{
+    margin-right:10%;
+    height: max-content;
+    min-width:100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: auto;
+    justify-content: space-between;
+}
+
+/* Here there will not be swiper card, The css of wrokshop/speaker cards will replace this */
+.swiper-card{
+    height:400px;
+    width: 250px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    flex: 0 0 auto;
+}
+/* ......................remove this later.................................. */
+
+.slider-card-container{
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow-img{
+    height: 30px;
+    width: 30px;
+}
+
+.slider-pagination-container{
+    height:50px;
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-pagination-inner{
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-pagination-button{
+    height:12px;
+    width: 12px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.slider-view-all-container-small{
+    display: none;
+}
+
+
+/* css for tablet/small screen view */
+@media screen and (max-width: 998px) {
+    .slider-card-container{
+        grid-template-columns: auto auto;
+    }
+    .slider-view-all-container-small{
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .slider-view-all-container-big{
+        display: none;
+    }
+}
+
+/* css for mobile-view */
+@media screen and (max-width: 800px){
+    .slider{
+        font-family: Inter;
+        margin-top:100px;
+        margin-inline: 10px;
+    }
+    .slider-heading-container{
+        display: flex;
+        /* height:113px; */
+        align-items:center;
+        justify-content: center;
+        padding: 0 0px 0 0px;
+    }
+    .slider-heading-inner-container{
+        display: flex;
+        align-items: center;
+    }
+    .slider-heading-img-container{
+        height:50px;
+        width:41px;
+        display: flex;
+        margin-right: 8px;
+    }
+    .slider-heading-thin{
+        font-size:18px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+    .slider-heading-bold{
+        font-size:36px;
+        font-weight: 700;
+        line-height:54px;
+    }
+    .slider-card-container{
+        grid-template-columns: auto;
+    }
+    .slider-div-container{
+        margin-inline:0px ;
+        position: relative;
+        left:50%;
+        transform: translate(-50%,0);
+        height: 400px;
+        overflow: hidden;
+        display:flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        /* make the width equal to the width of the card here */
+        width: 250px;
+    }
+
+    .slider-view-all-container-small{
+        display: flex;
+        margin-top:24px;
+        justify-content: center;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .slider-view-all-container-big{
+        display: none;
+    }
+}
+
