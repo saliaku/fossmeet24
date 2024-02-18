@@ -15,8 +15,9 @@ export default function NavBar() {
         <Link href={'/speakers'}>Speakers</Link>
         <Link href={'/schedule'}>Schedule</Link>
         <Link href={'/sponsors'}>Sponsors</Link>
-        <Link href={'#contact'}>Contact</Link>
-        <Link href="/register" className={styles["register-btn"]}>
+        <Link href={'/contacts'}>Contact</Link>
+        <Link href={'/live'}>Live</Link>
+        < Link href="/register" className={styles["register-btn"]}>
           <span>Register</span>
           <img src="arrow_right_alt.svg" alt='External link' />
         </Link>
