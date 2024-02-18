@@ -23,6 +23,6 @@
       "@components/*": ["./components/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/workshops/speakers.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/workshops/speakers.tsx", "app/live/videoplayer.js"],
   "exclude": ["node_modules"]
 }

@@ -1,0 +1,85 @@
+.main-personal-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .main-card {
+	margin: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+  }
+  
+  .main-card:hover {
+	transform: translateY(-5px);
+  }
+  
+  .main-image {
+	width: 200px; /* Adjust size as needed */
+	height: 200px; /* Adjust size as needed */
+	border-radius: 50%;
+  }
+  
+  .main-details {
+	margin-top: 10px;
+	text-align: center;
+  }
+  
+  .main-name {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333; /* Adjust color as needed */
+  }
+  
+  .main-role {
+	font-size: 18px;
+	color: #666; /* Adjust color as needed */
+  }
+
+
+  .team-cards-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }  
+  
+  .team-card {
+	width: 250px;
+	margin: 20px;
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	transition: transform 0.3s ease;
+  }
+
+  .team-card:hover {
+	transform: translateY(-5px);
+  }
+  
+  .team-card:hover .team-image {
+	filter: grayscale(100%);
+  }
+  
+  .team-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin: 0 auto 10px;
+  }
+  
+  .team-name {
+	font-size: 20px;
+	margin-bottom: 5px;
+  }
+  
+  .team-role {
+	font-size: 16px;
+	color: #666;
+  }
+
+  
