@@ -1,27 +1,26 @@
 'use client'
 
-import Carousel from "@/components/carousel/carousel"
+import Carousel from '@/components/carousel/carousel'
 import Footer from '@/components/footer/Footer'
 import Hero from '@/components/hero/Hero'
+import Slider from '@/components/slider/Slider'
+import Sponsors from '@/components/sponsors/Sponsors'
 import { client } from '@/sanity/lib/client'
 import { Speaker } from '@/sanity/schemas/speaker'
-import Speakersbox from "@components/common/Speakersbox"
+import Speakersbox from '@components/common/Speakersbox'
 import { useEffect, useState } from 'react'
 import Navbar from '../components/common/Navbar'
 import styles from './page.module.css'
-
 export const revalidate = 3600
-
 
 export default function Home() {
   const [speakers, setSpeakers] = useState([])
   const [showModal, setShowModal] = useState(false)
-  const [currSpeaker, setCurrSpeaker] = useState({});
+  const [currSpeaker, setCurrSpeaker] = useState({})
 
   useEffect(() => {
     client.fetch<Speaker[]>(`*[_type=="speaker"]`).then(setSpeakers)
   }, [])
-
 
   return (
     <div>
@@ -40,6 +39,8 @@ export default function Home() {
           ))}
         </Carousel>
       </div>
+      <Slider />
+      <Sponsors />
       <Footer />
     </div>
   )

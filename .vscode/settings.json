@@ -10,7 +10,7 @@
   "prettier.tabWidth": 2,
   "prettier.semi": false,
   "typescript.tsdk": "Use Workspace Version",
-  "[typescriptreact]": {
+  "[javascriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }
